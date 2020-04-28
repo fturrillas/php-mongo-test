@@ -34,7 +34,7 @@ $cursor = $collection->find( {} );
 
 
 foreach ($cursor as $data) {
-   var_dump($data);
+   print_r($data);
 };
 
 
