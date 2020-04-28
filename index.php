@@ -26,9 +26,9 @@ echo "URL = $mongo_url\n";
 
 $client = new MongoDB\Client($mongo_url);
 
-$collection = $client->selectCollection($mongo_database,"devices");
+$collection = $client->selectCollection($mongo_database,"tmp");
 
-echo "cantidad de devices = ". $collection->count(). "\n";
+echo "cantidad de registros = ". $collection->count(). "\n";
 
 
 ?>
