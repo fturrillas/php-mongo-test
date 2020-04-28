@@ -32,10 +32,7 @@ echo "cantidad de registros = ". $collection->count(). "\n";
 
 $cursor = $collection->find( {} );
 
-
-foreach ($cursor as $data) {
-   print_r($data);
-};
+print_r( $cursor );
 
 
 ?>
