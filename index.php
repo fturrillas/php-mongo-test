@@ -22,9 +22,9 @@ $mongo_url="mongodb://${mongo_user}:${mongo_password}@${mongo_server}:${mongo_po
 
 echo "URL = $mongo_url\n";
 
-/*
 $mongo = new Mongo($mongo_url);
 
+/*
 $devices=$mongo->genieacs->devices;
 
 $result= $devices->find()->toArray();
