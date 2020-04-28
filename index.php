@@ -2,10 +2,10 @@
 
 echo "hola mundo\n";
 
-mongo_server=getenv( "MONGODB_SERVER" );
-mongo_user=getenv( "MONGODB_USER" );
-mongo_password= getenv("MONGODB_PASSWORD");
-mongo_database=getenv("MONGODB_DATABASE" );
+$mongo_server=getenv( "MONGODB_SERVER" );
+$mongo_user=getenv( "MONGODB_USER" );
+$mongo_password= getenv("MONGODB_PASSWORD");
+$mongo_database=getenv("MONGODB_DATABASE" );
 
 echo "server $mongo_server\n";
 echo "user $mongo_user\n";
