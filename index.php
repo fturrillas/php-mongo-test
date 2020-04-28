@@ -17,6 +17,7 @@ require 'MongoDB/autoload.php';
 
 use MongoDB\Client as Mongo;
 
+/*
 
 $mongo_url="mongodb://${mongo_user}:${mongo_password}@${mongo_server}:${mongo_port}";
 
@@ -31,6 +32,7 @@ $result= $devices->find()->toArray();
 echo "devices \n";
 
 print_r( $result );
+*/
 
 
 
