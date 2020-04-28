@@ -24,6 +24,8 @@ echo "URL = $mongo_url\n";
 
 $mongo = new Mongo($mongo_url);
 
+print_r($mongo) ;
+
 /*
 $devices=$mongo->genieacs->devices;
 
