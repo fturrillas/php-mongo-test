@@ -15,30 +15,20 @@ echo "port = $mongo_port\n";
 
 require 'MongoDB/autoload.php';
 
+
 use MongoDB\Client as Mongo;
 
+/* $mongo_url="mongodb://${mongo_server}:${mongo_port}/${mongo_database}"; */
 
-$mongo_url="mongodb://${mongo_user}:${mongo_password}@${mongo_server}:${mongo_port}/${mongo_database}";
+$mongo_url="mongodb://${mongo_user}:${mongo_password}@${mongo_server}:${mongo_port}/${mongo_database}"; 
 
 echo "URL = $mongo_url\n";
 
-$mongo = new Mongo($mongo_url);
+$client = new MongoDB\Client($mongo_url);
 
-print_r($mongo) ;
+$collection = $client->selectCollection($mongo_database,"devices");
 
-$devices=$mongo->devices;
-
-echo "print_r\n";
-print_r($devices) ;
-$result= $devices->find();
-/*
-
-echo "devices \n";
-
-print_r( $result );
-*/
-
-
+echo "cantidad de devices = ". $collection->count(). "\n";
 
 
 ?>
