@@ -18,7 +18,7 @@ require 'MongoDB/autoload.php';
 use MongoDB\Client as Mongo;
 
 
-$mongo_url="mongodb://${mongo_user}:${mongo_password}@${mongo_server}:${mongo_port}";
+$mongo_url="mongodb://${mongo_user}:${mongo_password}@${mongo_server}:${mongo_port}/${database}";
 
 echo "URL = $mongo_url\n";
 
@@ -27,7 +27,7 @@ $mongo = new Mongo($mongo_url);
 print_r($mongo) ;
 
 /*
-$devices=$mongo->genieacs->devices;
+$devices=$mongo->devices;
 
 $result= $devices->find()->toArray();
 
