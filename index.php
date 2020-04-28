@@ -30,5 +30,12 @@ $collection = $client->selectCollection($mongo_database,"tmp");
 
 echo "cantidad de registros = ". $collection->count(). "\n";
 
+$cursor = $collection->find( {} );
+
+
+foreach ($cursor as $data) {
+   var_dump($data);
+};
+
 
 ?>
