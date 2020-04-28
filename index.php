@@ -28,6 +28,8 @@ print_r($mongo) ;
 
 $devices=$mongo->devices;
 
+echo "print_r\n";
+print_r($devices) ;
 /*
 $result= $devices->find()->toArray();
 
