@@ -30,8 +30,8 @@ $devices=$mongo->devices;
 
 echo "print_r\n";
 print_r($devices) ;
+$result= $devices->find();
 /*
-$result= $devices->find()->toArray();
 
 echo "devices \n";
 
