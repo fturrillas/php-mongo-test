@@ -26,9 +26,9 @@ $mongo = new Mongo($mongo_url);
 
 print_r($mongo) ;
 
-/*
 $devices=$mongo->devices;
 
+/*
 $result= $devices->find()->toArray();
 
 echo "devices \n";
